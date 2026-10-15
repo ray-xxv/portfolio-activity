@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Nathan Marquez, a Frieren-inspired grimoire of web projects."
+    />
+    <title>Nathan Marquez | Portfolio</title>
+
+    <!-- Fonts: Cormorant Garamond for spellbook headings, Nunito for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Loaded in <head> (no defer) so the theme is applied before the page paints -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- ===== Header / Navigation ===== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#about" class="brand">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"
+            />
+          </svg>
+          <span>Nathan Marquez</span>
+        </a>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </button>
+        </div>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== Hero / About Me ===== -->
+      <section id="about" class="hero">
+        <div class="container hero-inner">
+          <div class="portrait">
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <img
+              src="image\1c2b6e38-8e1b-4004-b9f0-1b86892e3a8e.jpg"
+              alt="Portrait of Nathan Marquez"
+              class="portrait-img"
+              id="portrait-img"
+              width="320"
+              height="320"
+            />
+            <span class="portrait-fallback" aria-hidden="true">NM</span>
+          </div>
+
+          <div class="hero-text">
+            <p class="eyebrow">A journey of a thousand lines begins with one</p>
+            <h1 class="hero-title">
+              Hi, I'm <span class="accent">Nathan</span>
+            </h1>
+            <p class="hero-intro">
+              an aspiring full-stack developer and BSIT student at Bulacan State
+              University focused on building modern web applications with
+              TypeScript, React, and Node.js.
+            </p>
+            <p class="hero-bio">
+              I enjoy building scalable, real-world full-stack applications—like
+              localized campus navigation tools and financial trackers—using
+              TypeScript, React, and Node.js.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View my Projects</a>
+              <a href="#contact" class="btn btn-ghost">Send a message</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Skills / Tech Stack ===== -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Known Spells</p>
+            <h2>My Tech Stack</h2>
+            <p class="section-sub">
+              The languages, frameworks, and tools I reach for when building
+              something new.
+            </p>
+          </div>
+
+          <div class="skill-grid">
+            <div class="skill-group">
+              <h3 class="skill-group-title">Languages</h3>
+              <ul class="skill-list">
+                <li class="skill">TypeScript</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Frontend</h3>
+              <ul class="skill-list">
+                <li class="skill">React</li>
+                <li class="skill">Tailwind CSS</li>
+                <li class="skill">Responsive Design</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Backend</h3>
+              <ul class="skill-list">
+                <li class="skill">Node.js</li>
+                <li class="skill">REST APIs</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Tools</h3>
+              <ul class="skill-list">
+                <li class="skill">Git</li>
+                <li class="skill">GitHub</li>
+                <li class="skill">VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Grimoire</p>
+            <h2>Projects I've Made</h2>
+            <p class="section-sub">
+              Projects collected along the way, each one a little more magic
+              than the last.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="card-media">
+                <img
+                  src="image/Screenshot%202026-10-15%20205141.png"
+                  alt="Screenshot of Campus Nav showing a 2D campus map with buildings and a college list"
+                  loading="lazy"
+                  width="1320"
+                  height="673"
+                />
+              </div>
+              <div class="card-body">
+                <svg class="card-flower" viewBox="0 0 40 40" aria-hidden="true">
+                  <ellipse cx="20" cy="11" rx="5" ry="9" />
+                  <ellipse cx="20" cy="29" rx="5" ry="9" />
+                  <ellipse cx="11" cy="20" rx="9" ry="5" />
+                  <ellipse cx="29" cy="20" rx="9" ry="5" />
+                  <circle cx="20" cy="20" r="3.5" class="flower-core" />
+                </svg>
+                <p class="card-label">Spell No. 01</p>
+                <h3 class="card-title">CampusNav</h3>
+                <p class="card-text">
+                  An interactive campus map that helps students find their way.
+                  Search for any college, building, or room, browse buildings
+                  floor by floor, and switch between 2D and 3D views on desktop
+                  or mobile.
+                </p>
+                <ul class="tag-list">
+                  <li class="tag">React</li>
+                  <li class="tag">TypeScript</li>
+                  <li class="tag">Tailwind CSS</li>
+                </ul>
+                <a
+                  href="https://github.com/ray-xxv"
+                  class="card-link"
+                  target="_blank"
+                  rel="noopener"
+                  >View project <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="card-media">
+                <img
+                  src="image/Screenshot%202026-10-15%20205211.png"
+                  alt="Screenshot of the StockSandBox landing page with a market replay chart"
+                  loading="lazy"
+                  width="998"
+                  height="545"
+                />
+              </div>
+              <div class="card-body">
+                <svg class="card-flower" viewBox="0 0 40 40" aria-hidden="true">
+                  <ellipse cx="20" cy="11" rx="5" ry="9" />
+                  <ellipse cx="20" cy="29" rx="5" ry="9" />
+                  <ellipse cx="11" cy="20" rx="9" ry="5" />
+                  <ellipse cx="29" cy="20" rx="9" ry="5" />
+                  <circle cx="20" cy="20" r="3.5" class="flower-core" />
+                </svg>
+                <p class="card-label">Spell No. 02</p>
+                <h3 class="card-title">StockSandBox</h3>
+                <p class="card-text">
+                  A market-replay simulator. Pick any moment in market history,
+                  hide everything that came after, and trade with $100,000 in
+                  virtual cash. Then see whether you beat simply buying and
+                  holding.
+                </p>
+                <ul class="tag-list">
+                  <li class="tag">React</li>
+                  <li class="tag">TypeScript</li>
+                  <li class="tag">Node.js</li>
+                </ul>
+                <a
+                  href="https://github.com/ray-xxv"
+                  class="card-link"
+                  target="_blank"
+                  rel="noopener"
+                  >View project <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="card-media">
+                <img
+                  src="image\Screenshot 2026-10-15 205821.png"
+                  alt="Screenshot of the StockSandBox landing page with a market replay chart"
+                  loading="lazy"
+                  width="998"
+                  height="545"
+                />
+              </div>
+              <div class="card-body">
+                <svg class="card-flower" viewBox="0 0 40 40" aria-hidden="true">
+                  <ellipse cx="20" cy="11" rx="5" ry="9" />
+                  <ellipse cx="20" cy="29" rx="5" ry="9" />
+                  <ellipse cx="11" cy="20" rx="9" ry="5" />
+                  <ellipse cx="29" cy="20" rx="9" ry="5" />
+                  <circle cx="20" cy="20" r="3.5" class="flower-core" />
+                </svg>
+                <p class="card-label">Spell No. 03</p>
+                <h3 class="card-title">Frieren Portfolio</h3>
+                <p class="card-text">
+                  This site: a responsive single-page portfolio with a day and
+                  night theme, built with semantic HTML, CSS Grid and Flexbox,
+                  and vanilla JavaScript.
+                </p>
+                <ul class="tag-list">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <a
+                  href="https://github.com/ray-xxv/portfolio-activity"
+                  class="card-link"
+                  target="_blank"
+                  rel="noopener"
+                  >View source <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer / Contact ===== -->
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-intro">
+          <p class="eyebrow">Contact</p>
+          <h2>Send a message by familiar</h2>
+          <p class="footer-quote">
+            &ldquo;The journey is what matters, not just the destination.&rdquo;
+            Feel free to reach out about projects, study groups, or anything
+            web.
+          </p>
+        </div>
+
+        <ul class="contact-list">
+          <li>
+            <a
+              href="https://github.com/ray-xxv"
+              class="contact-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 19c-4.5 1.4-4.5-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+                />
+              </svg>
+              <span>github.com/ray-xxv</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nathan-reigh-marquez/"
+              class="contact-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 9h3v11H4z M5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z M10 9h3v1.6c.5-1 1.7-1.8 3.3-1.8 3 0 3.7 1.9 3.7 4.6V20h-3v-5.8c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-3z"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="year">2026</span> Nathan Marquez. Crafted with HTML,
+          CSS and a little magic.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
