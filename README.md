@@ -1,4 +1,4 @@
-# Frieren Portfolio
+# Portfolio
 
 A responsive one-page portfolio built with HTML, CSS (Flexbox, Grid, media queries) and a little JavaScript.
 
