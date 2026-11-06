@@ -25,7 +25,7 @@
     <!-- ===== Header / Navigation ===== -->
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#about" class="brand">
+        <a href="#home" class="brand">
           <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"
@@ -61,14 +61,14 @@
     </header>
 
     <main>
-      <!-- ===== Hero / About Me ===== -->
-      <section id="about" class="hero">
+      <!-- ===== Hero ===== -->
+      <section id="home" class="hero">
         <div class="container hero-inner">
           <div class="portrait">
             <div class="portrait-ring" aria-hidden="true"></div>
             <img
-              src="image\1c2b6e38-8e1b-4004-b9f0-1b86892e3a8e.jpg"
-              alt="Portrait of Nathan Marquez"
+              src="image/1c2b6e38-8e1b-4004-b9f0-1b86892e3a8e.jpg"
+              alt="Pixel-art portrait of Nathan Marquez"
               class="portrait-img"
               id="portrait-img"
               width="320"
@@ -83,19 +83,63 @@
               Hi, I'm <span class="accent">Nathan</span>
             </h1>
             <p class="hero-intro">
-              an aspiring full-stack developer and BSIT student at Bulacan State
-              University focused on building modern web applications with
-              TypeScript, React, and Node.js.
-            </p>
-            <p class="hero-bio">
-              I enjoy building scalable, real-world full-stack applications—like
-              localized campus navigation tools and financial trackers—using
-              TypeScript, React, and Node.js.
+              An aspiring full-stack developer who builds modern, responsive web
+              applications with TypeScript, React, and Node.js.
             </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn btn-primary">View my Projects</a>
               <a href="#contact" class="btn btn-ghost">Send a message</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== About ===== -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">The Journey So Far</p>
+            <h2>About Me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm a BSIT student at Bulacan State University who enjoys
+                turning everyday problems into working web apps. My favorite
+                projects are the ones people can actually use, like a campus
+                navigation tool for students and a market-replay simulator for
+                learning how to invest.
+              </p>
+              <p>
+                I work mostly with TypeScript, React, and Node.js, and I care
+                about clean code and layouts that work on every screen, from a
+                small phone to a wide desktop monitor.
+              </p>
+              <p>
+                Like Frieren, I believe the journey matters as much as the
+                destination, so every project is a chance to learn a new spell.
+              </p>
+            </div>
+
+            <dl class="about-facts">
+              <div class="fact">
+                <dt>Program</dt>
+                <dd>BS Information Technology</dd>
+              </div>
+              <div class="fact">
+                <dt>School</dt>
+                <dd>Bulacan State University</dd>
+              </div>
+              <div class="fact">
+                <dt>Focus</dt>
+                <dd>Full-stack web development</dd>
+              </div>
+              <div class="fact">
+                <dt>Based in</dt>
+                <dd>Bulacan, Philippines</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
@@ -169,7 +213,7 @@
               <div class="card-media">
                 <img
                   src="image/Screenshot%202026-10-15%20205141.png"
-                  alt="Screenshot of Campus Nav showing a 2D campus map with buildings and a college list"
+                  alt="Screenshot of CampusNav showing a 2D campus map with buildings and a college list"
                   loading="lazy"
                   width="1320"
                   height="673"
@@ -250,11 +294,11 @@
             <article class="project-card">
               <div class="card-media">
                 <img
-                  src="image\Screenshot 2026-10-15 205821.png"
-                  alt="Screenshot of the StockSandBox landing page with a market replay chart"
+                  src="image/Screenshot%202026-10-15%20205821.png"
+                  alt="Screenshot of this portfolio's hero section in the night theme"
                   loading="lazy"
-                  width="998"
-                  height="545"
+                  width="1835"
+                  height="878"
                 />
               </div>
               <div class="card-body">
@@ -289,60 +333,133 @@
           </div>
         </div>
       </section>
+
+      <!-- ===== Contact ===== -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Send a message by familiar</h2>
+            <p class="section-sub">
+              &ldquo;The journey is what matters, not just the
+              destination.&rdquo; Feel free to reach out about projects, study
+              groups, or anything web.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <ul class="contact-list">
+              <li>
+                <a
+                  href="https://github.com/ray-xxv"
+                  class="contact-item"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M9 19c-4.5 1.4-4.5-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+                    />
+                  </svg>
+                  <span class="contact-text">
+                    <span class="contact-label">GitHub</span>
+                    <span>github.com/ray-xxv</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/nathan-reigh-marquez/"
+                  class="contact-item"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M4 9h3v11H4z M5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z M10 9h3v1.6c.5-1 1.7-1.8 3.3-1.8 3 0 3.7 1.9 3.7 4.6V20h-3v-5.8c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-3z"
+                    />
+                  </svg>
+                  <span class="contact-text">
+                    <span class="contact-label">LinkedIn</span>
+                    <span>in/nathan-reigh-marquez</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <div class="contact-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z" />
+                    <circle cx="12" cy="9.5" r="2.5" />
+                  </svg>
+                  <span class="contact-text">
+                    <span class="contact-label">Location</span>
+                    <span>Bulacan, Philippines</span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="What would you like to talk about?"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                Send message
+              </button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- ===== Footer / Contact ===== -->
-    <footer id="contact" class="site-footer">
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-intro">
-          <p class="eyebrow">Contact</p>
-          <h2>Send a message by familiar</h2>
-          <p class="footer-quote">
-            &ldquo;The journey is what matters, not just the destination.&rdquo;
-            Feel free to reach out about projects, study groups, or anything
-            web.
-          </p>
-        </div>
-
-        <ul class="contact-list">
-          <li>
-            <a
-              href="https://github.com/ray-xxv"
-              class="contact-link"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M9 19c-4.5 1.4-4.5-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
-                />
-              </svg>
-              <span>github.com/ray-xxv</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nathan-reigh-marquez/"
-              class="contact-link"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M4 9h3v11H4z M5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z M10 9h3v1.6c.5-1 1.7-1.8 3.3-1.8 3 0 3.7 1.9 3.7 4.6V20h-3v-5.8c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-3z"
-                />
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="container footer-bottom">
-        <p>
+        <a href="#home" class="brand footer-brand">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"
+            />
+          </svg>
+          <span>Nathan Marquez</span>
+        </a>
+        <p class="footer-copy">
           &copy; <span id="year">2026</span> Nathan Marquez. Crafted with HTML,
           CSS and a little magic.
         </p>
+        <a href="#home" class="back-to-top"
+          >Back to top <span aria-hidden="true">&uarr;</span></a
+        >
       </div>
     </footer>
   </body>

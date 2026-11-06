@@ -4,7 +4,7 @@
      1. Day / Night theme that follows the visitor's system setting
      2. Hamburger menu for mobile navigation
      3. Active nav link highlight while scrolling
-     4. Photo fallback and footer year
+     4. Photo fallback, contact form message, and footer year
    ========================================================= */
 
 // Matches when the operating system is set to dark mode
@@ -86,7 +86,7 @@ function initMobileMenu() {
  */
 function initActiveNavLink() {
     const navLinks = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll("#about, #skills, #projects, #contact");
+    const sections = document.querySelectorAll("#home, #about, #skills, #projects, #contact");
     if (!("IntersectionObserver" in window) || sections.length === 0) {
         return;
     }
@@ -133,6 +133,29 @@ function initPhotoFallback() {
 }
 
 /**
+ * Handles the contact form. The browser checks the required fields first
+ * (the submit event only fires when they are valid). There is no server
+ * behind this static site, so the form confirms it was filled in and
+ * points visitors to the links that do reach me.
+ */
+function initContactForm() {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+    if (!form || !status) {
+        return;
+    }
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = form.elements.name.value.trim();
+        status.textContent =
+            "Thanks, " + name + "! This demo form isn't connected to email yet, " +
+            "so please also reach me on LinkedIn or GitHub.";
+        form.reset();
+    });
+}
+
+/**
  * Writes the current year into the footer copyright line.
  */
 function setFooterYear() {
@@ -147,5 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initMobileMenu();
     initActiveNavLink();
     initPhotoFallback();
+    initContactForm();
     setFooterYear();
 });
